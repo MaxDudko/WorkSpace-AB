@@ -1,0 +1,190 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>WorkSpace AB</title>
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark topNavbar">
+            <a class="navbar-brand logo" href=""><img src="https://a-bank.com.ua/img/0b20957ed1d30cdebaab461e907dfff7.svg" alt="A-Bank"></a>
+            <h1 class="title">WorkSpace AB</h1>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ПОЛЕЗНЫЕ ССЫЛКИ:</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="https://docs.google.com/spreadsheets/d/1ZF8NfpsjoJyAiDw1D6cPum0X0Z6QCYBHaEskJggFXMU/edit#gid=1636965483" target="_blank">ДОСТУПНЫЕ СХЕМЫ</a>
+                            <a class="dropdown-item" href="http://nd.dmsu.gov.ua/" target="_blank">ПРОВЕРКА ДОКУМЕНТОВ</a>
+                            <a class="dropdown-item" href="https://my.a-bank.com.ua/" target="_blank">ПУТЕВОДИТЕЛЬ</a>
+                            <a class="dropdown-item" href="https://docs.google.com/spreadsheets/d/1JiQSF8UmYXiZw24UKigpWeJNVWGraUNoQcA1apfFvoE/edit?ts=58c2b5af#gid=723830375" target="_blank">ГРАФИК</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="navCalculator">КРЕДИТНЫЙ КАЛЬКУЛЯТОР</a>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn bg-dark" data-toggle="modal" data-target="#exampleModal" title="Форма обратной связи">
+                            <img src="https://start.a-bank.com.ua/DesktopGUI/css/navbar/helpdesk.png" alt="HELP">
+                        </button>
+                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Форма обратной связи</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body form-group">
+                                        <textarea class="form-control" rows="5"></textarea>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                                        <button type="button" class="btn btn-primary" id="feedback">Отправить</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="row justify-content-center creditCalculator" id="creditCalculator">
+            <div class="row form-block">
+                <div class="col form-group form-item">
+                    <label for="product">КРЕДИТНЫЙ ПРОДУКТ</label>
+                    <select class="form-control" id="product">
+                        <option selected="selected">Выбрать схему..</option>
+<!--********************************************************************************************************-->
+                        <!--Trading network / One-time commission / Monthly commission / Insurance / Grace-->
+                        <!--Торговая сеть / Единоразовая комиссия / Ежемесячная комиссия / Страховка / Грейс-->
+                        <optgroup label="Не Системные">
+                            <option value="n/2.9/2.9/0/0">2,9-2,9 Стандарт 36 мес.</option>
+                            <option value="n/4/4/0/0">4-4 Стандарт 36 мес.</option>
+                            <option value="n/3/3/0.99/0">3-3 Стандарт 36 мес. Со страх.</option>
+                            <option value="n/2.5/2.5/1.5/0">2.5-2.5 Стандарт 36 мес. Со страх.</option>
+                            <option value="n/0/6/1.98/5">0-5-36 Стандарт Страховка</option>
+                        </optgroup>
+                        <optgroup label="Comfy">
+                            <option value="c/0/3.2/0/2">Р3-24</option>
+                            <option value="c/0/3.3/0/4">Р5-24</option>
+                            <option value="c/0/3.4/0/6">Р7-24</option>
+                            <option value="c/0/3.5/0/9">Р10-24</option>
+                            <option value="c/0/3.5/0/11">Р12-24</option>
+                            <option value="c/0/3.75/0/14">Р15-24</option>
+                            <option value="c/0/3.75/0/14">Р18-24</option>
+                            <option value="c/0/3.75/0/19">Р20-24</option>
+                            <option value="c/0/4/0/24">Р25</option>
+                            <option value="c/0/1.11/0/0">10-10-10</option>
+                            <option value="c/0/3.4/0/0">K0/24/53</option>
+                        </optgroup>
+                        <optgroup label="Eldorado">
+                            <option value="e/3.5/3.5/0/0">Стандарт</option>
+                            <option value="e/0/3.5/0/2">0-2-24</option>
+                            <option value="e/0/3.5/0/4">0-4-24</option>
+                            <option value="e/0/3.5/0/6">0-6-24</option>
+                            <option value="e/7/3.5/0/6">0-6-24 UF</option>
+                            <option value="e/5/3.5/0/8">0-8-24 с ед 5%</option>
+                            <option value="e/8/3.5/0/8">0-8-24 с ед 8%</option>
+                            <option value="e/0/3.5/0.75/9">0-9-24 с СК 0,75%</option>
+                            <option value="e/0/3.5/0/10">0-10-24 с ПВ 40%</option>
+                            <option value="e/0/3.5/0/12">0-12-24</option>
+                            <option value="e/6/3.5/0/12">0-12-24 с РК</option>
+                            <option value="e/9/3.5/0/12">0-12-24 с ед 9%</option>
+                            <option value="e/12/3.5/0/12">0-12-24 с ед 12%</option>
+                            <option value="e/0/3.5/0/14">0-14-24</option>
+                            <option value="e/10/3.5/0/14">0-14-24 с РК</option>
+                            <option value="e/14/3.5/0/14">0-14-24 с ед 14%</option>
+                            <option value="e/0/3.5/0.75/15">0-15-24 с СК 0,75%</option>
+                            <option value="e/12/3.5/0/20">0-20-24 с ед 12%</option>
+                        </optgroup>
+                        <optgroup label="Другие продукты">
+                            <option value="o/5.99/5.99/0/0">Быстрые Наличные</option>
+                        </optgroup>
+<!--********************************************************************************************************-->
+                    </select>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="service">
+                        <label class="form-check-label" for="service">Сервис</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="insurance">
+                        <label class="form-check-label" for="insurance">Страховка</label>
+                    </div>
+                </div>
+                <div class="col form-group form-item">
+                    <label for="sum">СУММА ПО СЧЁТУ</label>
+                    <input class="form-control" type="text" id="sum" placeholder="Сумма..">
+                </div>
+                <div class="col form-group form-item">
+                    <label for="pv">ПЕРВЫЙ ВЗНОС</label>
+                    <input class="form-control" type="text" id="pv" placeholder="Первый взнос..">
+                </div>
+                <div class="col form-group form-item">
+                    <label for="term">СРОК КРЕДИТА</label>
+                    <input class="form-control" type="text" id="term" placeholder="Срок..">
+                </div>
+            </div>
+            <div class="col-12 btn-container">
+                <button type="button" class="btn btn-secondary btn-lg" id="calculate">РАСЧИТАТЬ</button>
+            </div>
+            <div class="row form-block">
+                <div class="col-12">
+                    <h4 class="productName"></h4>
+                </div>
+                <div class="col form-group form-item">
+                    <label for="sumCredit">СУММА КРЕДИТА</label>
+                    <input class="form-control" type="text" id="sumCredit" readonly="readonly">
+                </div>
+                <div class="col form-group form-item">
+                    <label for="payment">РАВНЫМИ ПЛАТЕЖАМИ</label>
+                    <input class="form-control" type="text" id="payment" readonly="readonly">
+                </div>
+                <div class="col form-group form-item">
+                    <label for="sumCredit">ПЛАТЁЖ В ГРЕЙС</label>
+                    <input class="form-control" type="text" id="paymentInGrace" readonly="readonly">
+                </div>
+                <div class="col form-group form-item">
+                    <label for="paymentAfterGrace">ПОСЛЕ ГРЕЙСА</label>
+                    <input class="form-control" type="text" id="paymentAfterGrace" readonly="readonly">
+                </div>
+                <div class="col form-group form-item">
+                    <label for="overpaymentMonth">ПЕРЕПЛАТА В МЕСЯЦ</label>
+                    <input class="form-control" type="text" id="overpaymentMonth" readonly="readonly">
+                </div>
+                <div class="col form-group form-item">
+                    <label for="overpaymentAll">ЗА ВЕСЬ СРОК</label>
+                    <input class="form-control" type="text" id="overpaymentAll" readonly="readonly">
+                </div>
+            </div>
+            <div class="row form-block">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Продукт:</th>
+                            <th scope="col">Сумма кредита:</th>
+                            <th scope="col">Грейс:</th>
+                            <th scope="col">Равными платежами:</th>
+                            <th scope="col">Платёж в грейс:</th>
+                            <th scope="col">После грейса:</th>
+                            <th scope="col">Переплата в месяц:</th>
+                            <th scope="col">Переплата за вес срок:</th>
+                        </tr>
+                    </thead>
+                    <tbody id="compareTable">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
