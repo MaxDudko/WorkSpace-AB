@@ -53,8 +53,8 @@ div {
     border-radius: var(--radius-10);
 }
 .creditCalculator {
-    margin: 2em 1em;
-    padding: 2em 1em;
+    margin-top: 2em;
+    padding-top: 2em;
     border: 3px solid #008000;
     border-radius: var(--radius-30);
     box-shadow: var(--shadow-bold);
@@ -62,7 +62,7 @@ div {
     animation-duration: 2s;
 }
 .form-block {
-    margin: 0 1em;
+    margin: 0 1em 0 1em;
     border: 3px solid #008000;
     border-radius: var(--radius-30);
     box-shadow: var(--shadow-bold);
@@ -108,4 +108,4 @@ tr {
     animation-name: addElement;
     animation-duration: 1s;
     opacity: 1;
-}     
+}
