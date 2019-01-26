@@ -21,17 +21,18 @@ body {
     background: var(--bg-gradient)!important;
     background-image: url(https://a-bank.com.ua/img/4e3916b8a5107ccc2cc9e964b24bc6ac.jpg);
     font-family: Arial, sans-serif;
+    font-size: 2vh;
+    white-space: nowrap
+}
+div {
+   border: 1px solid rgba(0,0,0,0);
 }
 .topNavbar {
     box-shadow: var(--shadow-bold);
-    text-shadow: 0.1px 0.1px 10px #00FF00;
+    text-shadow: 0.1px 0.1px 10px #696969;
+    font-size: 2.5vh;
 }
 .logo img {
-    color: #00FF00;
-    text-shadow: var(--shadow-slim);
-}
-.title {
-    margin-left: 25%;
     color: #00FF00;
     box-shadow: var(--shadow-slim);
     border-radius: var(--radius-30);
@@ -52,8 +53,8 @@ body {
     border-radius: var(--radius-10);
 }
 .creditCalculator {
-    margin: 2% 1%;
-    padding: 2% 1%;
+    margin: 2em 1em;
+    padding: 2em 1em;
     border: 3px solid #008000;
     border-radius: var(--radius-30);
     box-shadow: var(--shadow-bold);
@@ -61,13 +62,10 @@ body {
     animation-duration: 2s;
 }
 .form-block {
-    width: 100%;
+    margin: 0 1em;
     border: 3px solid #008000;
     border-radius: var(--radius-30);
     box-shadow: var(--shadow-bold);
-}
-.form-item {
-    font-size: 12px;
 }
 .productName {
     text-align: center;
@@ -88,8 +86,6 @@ input:focus, select:focus {
     border-radius: var(--radius-10);
 }
 .btn-container {
-    margin: 10px;
-    width: 100%;
     text-align: center;
 }
 .btn-container button, .delRow {
