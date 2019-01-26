@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>WorkSpace AB</title>
         <link rel="shortcut icon" href="img/favicon.ico">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -9,8 +10,7 @@
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark topNavbar">
-            <a class="navbar-brand logo" href=""><img src="https://a-bank.com.ua/img/0b20957ed1d30cdebaab461e907dfff7.svg" alt="A-Bank"></a>
-            <h1 class="title">WorkSpace AB</h1>
+            <a class="navbar-brand logo" href=""><img src="https://a-bank.com.ua/img/0b20957ed1d30cdebaab461e907dfff7.svg" alt="WorkSpace AB"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -55,12 +55,12 @@
                 </ul>
             </div>
         </nav>
-        <div class="row justify-content-center creditCalculator" id="creditCalculator">
+        <div class="container-fluide justify-content-center creditCalculator" id="creditCalculator">
             <div class="row form-block">
-                <div class="col form-group form-item">
+                <div class="col-6 col-sm-6 col-md-3 col-lg-3 form-group form-item">
                     <label for="product">КРЕДИТНЫЙ ПРОДУКТ</label>
                     <select class="form-control" id="product">
-                        <option selected="selected">Выбрать схему..</option>
+                        <option selected="selected">Выберете схему..</option>
 <!--********************************************************************************************************-->
                         <!--Trading network / One-time commission / Monthly commission / Insurance / Grace-->
                         <!--Торговая сеть / Единоразовая комиссия / Ежемесячная комиссия / Страховка / Грейс-->
@@ -118,15 +118,15 @@
                         <label class="form-check-label" for="insurance">Страховка</label>
                     </div>
                 </div>
-                <div class="col form-group form-item">
+                <div class="col-6 col-sm-6 col-md-3 col-lg-3 form-group form-item">
                     <label for="sum">СУММА ПО СЧЁТУ</label>
                     <input class="form-control" type="text" id="sum" placeholder="Сумма..">
                 </div>
-                <div class="col form-group form-item">
+                <div class="col-6 col-sm-6 col-md-3 col-lg-3 form-group form-item">
                     <label for="pv">ПЕРВЫЙ ВЗНОС</label>
                     <input class="form-control" type="text" id="pv" placeholder="Первый взнос..">
                 </div>
-                <div class="col form-group form-item">
+                <div class="col-6 col-sm-6 col-md-3 col-lg-3 form-group form-item">
                     <label for="term">СРОК КРЕДИТА</label>
                     <input class="form-control" type="text" id="term" placeholder="Срок..">
                 </div>
@@ -138,33 +138,33 @@
                 <div class="col-12">
                     <h4 class="productName"></h4>
                 </div>
-                <div class="col form-group form-item">
+                <div class="col-6 col-sm-6 col-md-2 col-lg-2 form-group form-item">
                     <label for="sumCredit">СУММА КРЕДИТА</label>
                     <input class="form-control" type="text" id="sumCredit" readonly="readonly">
                 </div>
-                <div class="col form-group form-item">
+                <div class="col-6 col-sm-6 col-md-2 col-lg-2 form-group form-item">
                     <label for="payment">РАВНЫМИ ПЛАТЕЖАМИ</label>
                     <input class="form-control" type="text" id="payment" readonly="readonly">
                 </div>
-                <div class="col form-group form-item">
+                <div class="col-6 col-sm-6 col-md-2 col-lg-2 form-group form-item">
                     <label for="sumCredit">ПЛАТЁЖ В ГРЕЙС</label>
                     <input class="form-control" type="text" id="paymentInGrace" readonly="readonly">
                 </div>
-                <div class="col form-group form-item">
+                <div class="col-6 col-sm-6 col-md-2 col-lg-2 form-group form-item">
                     <label for="paymentAfterGrace">ПОСЛЕ ГРЕЙСА</label>
                     <input class="form-control" type="text" id="paymentAfterGrace" readonly="readonly">
                 </div>
-                <div class="col form-group form-item">
+                <div class="col-6 col-sm-6 col-md-2 col-lg-2 form-group form-item">
                     <label for="overpaymentMonth">ПЕРЕПЛАТА В МЕСЯЦ</label>
                     <input class="form-control" type="text" id="overpaymentMonth" readonly="readonly">
                 </div>
-                <div class="col form-group form-item">
+                <div class="col-6 col-sm-6 col-md-2 col-lg-2 form-group form-item">
                     <label for="overpaymentAll">ЗА ВЕСЬ СРОК</label>
                     <input class="form-control" type="text" id="overpaymentAll" readonly="readonly">
                 </div>
             </div>
-            <div class="row form-block">
-                <table class="table">
+            <div class="table-responsive form-block">
+                <table class="col table">
                     <thead>
                         <tr>
                             <th scope="col">Продукт:</th>
