@@ -8,7 +8,7 @@
 }
 @keyframes addElement {
   from {opacity: 0;}
-  to {opacity: 0.9;}
+  to {opacity: 1;}
 }
 @keyframes delElement {
   from {opacity: 1;}

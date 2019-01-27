@@ -19,4 +19,4 @@ function addCompare() {
     compareTable.appendChild(row);
 }
 
-export {addCompare};
+//export {addCompare};

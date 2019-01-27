@@ -1,14 +1,14 @@
-import {AllProducts} from "../PRODUCTS_Constants.js";
+//import {AllProducts} from "../PRODUCTS_Constants.js";
 //import {addProduct} from "/product/addProduct.js";
-import {product, createProduct} from "/product/createProduct.js";
-import {calculateFunction} from "/calculate/calculateFunction.js";
-import {calculateOutput} from "/calculate/calculateOutput.js";
-import {addCompare} from "/compare/addCompare.js";
-import {compareProducts} from "/compare/compareProducts.js";
+//import {product, createProduct} from "/product/createProduct.js";
+//import {calculateFunction} from "/calculate/calculateFunction.js";
+//import {calculateOutput} from "/calculate/calculateOutput.js";
+//import {addCompare} from "/compare/addCompare.js";
+//import {compareProducts} from "/compare/compareProducts.js";
 
 
 (() => {
-   function addScriptNode(link) {
+   function addScript(link) {
       let script = document.createElement('script');
       script.src = link;
       script.defer = true;
@@ -17,15 +17,15 @@ import {compareProducts} from "/compare/compareProducts.js";
     const scriptLink = {
       PRODUCTS_Constants: "PRODUCTS_Constants.js",
       addProduct: "js/product/addProduct.js",
-    /*  formValidation: "js/validation/formValidation.js",
+      formValidation: "js/validation/formValidation.js",
       createProduct: "js/product/createProduct.js",
       calculateFunction: "js/calculate/calculateFunction.js",
       calculateOutput: "js/calculate/calculateOutput.js",
       addCompare: "js/compare/addCompare.js",
-      compareProducts: "js/compare/compareProducts.js"*/
+      compareProducts: "js/compare/compareProducts.js"
     }
     for(let src in scriptLink) {
-      addScriptNode(scriptLink[src]);
+      addScript(scriptLink[src]);
     }
 })();
 

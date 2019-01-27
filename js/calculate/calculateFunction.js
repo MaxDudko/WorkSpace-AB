@@ -42,4 +42,4 @@ function calculateFunction() {
     }
 }
 
-export {calculateFunction};
+//export {calculateFunction};

@@ -29,4 +29,4 @@ function compareProducts() {
     }
 }
 
-export {compareProducts};
+//export {compareProducts};
