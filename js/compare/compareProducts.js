@@ -28,5 +28,3 @@ function compareProducts() {
         }
     }
 }
-
-//export {compareProducts};

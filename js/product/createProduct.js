@@ -21,5 +21,3 @@ function createProduct() {
     })();
     product.PercentFix = 0.01;
 }
-
-//export {product, createProduct};

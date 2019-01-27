@@ -41,5 +41,3 @@ function calculateFunction() {
         'overpaymentAll': +overpaymentAll.toFixed(2)
     }
 }
-
-//export {calculateFunction};

@@ -11,5 +11,3 @@ function calculateOutput() {
         }
     }
 }
-
-//export {calculateOutput};

@@ -6,7 +6,6 @@
 //import {addCompare} from "/compare/addCompare.js";
 //import {compareProducts} from "/compare/compareProducts.js";
 
-
 (() => {
    function addScript(link) {
       let script = document.createElement('script');

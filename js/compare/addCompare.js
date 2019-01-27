@@ -18,5 +18,3 @@ function addCompare() {
     row.lastChild.querySelector('button').className = 'close';
     compareTable.appendChild(row);
 }
-
-//export {addCompare};
