@@ -2,36 +2,36 @@ function calculateFunction() {
     let sum = document.querySelector('#sum').value;
     let pv = document.querySelector('#pv').value;
     let term = document.querySelector('#term').value;
-    let sumCredit = (function() {
+    let sumCredit = (() => {
         return (sum - pv) + ((sum - pv) / 100 * product.OneTimeCommission) + ((sum - pv + product.Service) / 100 * product.Insurance * term) + product.Service;
-    }());
-    let overpaymentMonth = (function() {
+    })();
+    let overpaymentMonth = (() => {
         return (sumCredit / 100 * product.MonthlyCommission) + (sumCredit / 100 * product.PercentFix);
-    }());
-    let overpaymentAll = (function() {
+    })();
+    let overpaymentAll = (() => {
         return (sumCredit - (sum - pv)) + (overpaymentMonth * (term - product.Grace));
-    }());
-    let payment = (function() {
+    })();
+    let payment = (() => {
         if(product.Grace !== 0) {
             return sumCredit / product.Grace;
         } else {
             return (sumCredit / term) + overpaymentMonth;
         }
-    }());
-    let paymentInGrace = (function() {
+    })();
+    let paymentInGrace = (() => {
         if(product.Grace !== 0) {
             return (sumCredit / term);
         } else {
             return 0;
         }
-    }());
-    let paymentAfterGrace = (function() {
+    })();
+    let paymentAfterGrace = (() => {
         if(product.Grace !== 0) {
             return (sumCredit - (paymentInGrace * product.Grace)) / (term - product.Grace) + overpaymentMonth;
         } else {
             return 0;
         }
-    }());
+    })();
     return product.result = {
         'sumCredit': +sumCredit.toFixed(2),
         'payment': +payment.toFixed(2),
@@ -42,4 +42,4 @@ function calculateFunction() {
     }
 }
 
-//export {calculate};
+export {calculateFunction};
