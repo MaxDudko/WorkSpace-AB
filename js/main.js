@@ -14,7 +14,6 @@
       document.body.appendChild(script);
     }
     const scriptLink = {
-      //PRODUCTS_Constants: "PRODUCTS_Constants.js",
       addProduct: "js/product/addProduct.js",
       formValidation: "js/validation/formValidation.js",
       createProduct: "js/product/createProduct.js",
