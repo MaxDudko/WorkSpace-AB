@@ -1,4 +1,5 @@
 const product = {};
+
 function createProduct() {
     splitValue = document.querySelector('#product').value.split('/');
     product.Name = document.querySelector('#product').options[document.querySelector('#product').selectedIndex].text;

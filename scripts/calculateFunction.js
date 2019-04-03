@@ -1,16 +1,21 @@
 function calculateFunction() {
+
     let sum = document.querySelector('#sum').value;
     let pv = document.querySelector('#pv').value;
     let term = document.querySelector('#term').value;
+
     let sumCredit = (() => {
         return (sum - pv) + ((sum - pv) / 100 * product.OneTimeCommission) + ((sum - pv + product.Service) / 100 * product.Insurance * term) + product.Service;
     })();
+
     let overpaymentMonth = (() => {
         return (sumCredit / 100 * product.MonthlyCommission) + (sumCredit / 100 * product.PercentFix);
     })();
+
     let overpaymentAll = (() => {
         return (sumCredit - (sum - pv)) + (overpaymentMonth * (term - product.Grace));
     })();
+
     let payment = (() => {
         if(product.Grace !== 0) {
             return sumCredit / product.Grace;
@@ -18,13 +23,15 @@ function calculateFunction() {
             return (sumCredit / term) + overpaymentMonth;
         }
     })();
+
     let paymentInGrace = (() => {
         if(product.Grace !== 0) {
             return (sumCredit / term);
         } else {
-            return 0;
+           return 0;
         }
     })();
+
     let paymentAfterGrace = (() => {
         if(product.Grace !== 0) {
             return (sumCredit - (paymentInGrace * product.Grace)) / (term - product.Grace) + overpaymentMonth;
@@ -32,7 +39,8 @@ function calculateFunction() {
             return 0;
         }
     })();
-    return product.result = {
+
+    product.result = {
         'sumCredit': +sumCredit.toFixed(2),
         'payment': +payment.toFixed(2),
         'paymentInGrace': +paymentInGrace.toFixed(2),
@@ -40,4 +48,17 @@ function calculateFunction() {
         'overpaymentMonth': +overpaymentMonth.toFixed(2),
         'overpaymentAll': +overpaymentAll.toFixed(2)
     }
+
+    document.querySelector('.productName').innerText = product.Name;
+    for(let result in product.result){
+        if(!isNaN(product.result[result])) {
+            document.querySelector(`#${result}`).value = product.result[result];
+        }
+        if(!isFinite(product.result[result]) || product.result[result] < 0) {
+            document.querySelector(`#${result}`).style.color = "red";
+        } else {
+            document.querySelector(`#${result}`).style.color = "";
+        }
+    }
+
 }

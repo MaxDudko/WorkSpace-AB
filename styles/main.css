@@ -1,0 +1,142 @@
+/*@font-face {
+    font-family: 'Merienda';
+    font-style: normal;
+    font-weight: 400;
+    src: url(Merienda-Regular.ttf);
+}
+@font-face {
+    font-family: 'Merienda';
+    font-style: normal;
+    font-weight: 400;
+    src: url(Merienda-Bold.ttf);
+}*/
+html, body {
+    height: 100%;
+}
+body {
+    background-image: url(background.jpg);
+    font-family: Merienda, cursive;
+    font-size: 2vh;
+    white-space: nowrap;
+}
+div {
+    border: 1px solid rgba(0,0,0,0);
+}
+#topNavbar {
+    box-shadow: 4px 3px 3px #00FF00;
+    text-shadow: 0.1px 0.1px 10px #696969;
+    font-size: 2vh;
+    font-weight: bold;
+}
+#navbarDropdown {
+    border: 1px solid rgba(0,0,0,1);
+    box-shadow: 1px 1px 1px rgba(0,0,0,1);
+    border-radius: 30px;
+}
+.nav-item:nth-child(1) .nav-link {
+    text-shadow: 1px 1px 1px rgba(0,0,0,1), -1px 1px 1px rgba(0,0,0,1);
+    transition: all .5s;
+}
+.nav-item:nth-child(2) .nav-link {
+    text-shadow: -1px -1px #000, 0 1px 0 #444;
+    transition: all 1s;
+}
+#help {
+    margin: 0;
+    padding: 0;
+    border: 1px solid rgba(0,0,0,1);
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+    border-radius: 50px;
+}
+#help img:hover {
+    transform: scale(0.9) rotate(10deg);
+    transition: 2s;
+}
+.logo h1 {
+    font-size: 3vh;
+    color: #00FF00;
+    box-shadow: 2px 1px 1px #00FF00;
+    border-radius: 30px;
+}
+.dropdown:hover > .dropdown-menu {
+    display: block;
+    transform: skewX(-5deg);
+    transition: 4s;
+    margin: 0;
+    background: radial-gradient(ellipse at center, rgba(181,189,200,1) 0%,rgba(130,140,149,1) 0%,rgba(40,52,59,1) 100%);
+    border-radius: 10px;
+    box-shadow: 4px 3px 3px #00FF00;
+    opacity: 0.9;
+}
+.dropdown-item:hover {
+    background: radial-gradient(ellipse at center, rgba(181,189,200,1) 0%,rgba(130,140,149,1) 0%,rgba(40,52,59,1) 100%);
+}
+#creditCalculator {
+    margin-top: 2em;
+    padding-bottom: 2em;
+    padding-top: 2em;
+    border: 3px solid #008000;
+    border-radius: 30px;
+    box-shadow: 4px 3px 3px #00FF00;
+}
+.form-block {
+    margin: 0 1em 0 1em;
+    border: 3px solid #008000;
+    border-radius: 30px;
+    box-shadow: 4px 3px 3px #00FF00;
+}
+.productName {
+    text-align: center;
+    text-shadow: 2px 1px 1px #006400;
+    opacity: 0.7;
+}
+input, select {
+    box-shadow: 2px 1px 1px #00FF00;
+}
+input:hover, select:hover {
+    box-shadow: 1px 1px 1px #00FF00 !important;
+}
+input:focus, select:focus {
+    box-shadow: 1px 1px 1px #00FF00 !important;
+    border-radius: 10px;
+}
+.btn-container {
+    text-align: center;
+}
+
+.btn-container button {
+    background: #24f000;
+    background-image: -webkit-linear-gradient(top, #24f000, #113d00);
+    background-image: -moz-linear-gradient(top, #24f000, #113d00);
+    background-image: -ms-linear-gradient(top, #24f000, #113d00);
+    background-image: -o-linear-gradient(top, #24f000, #113d00);
+    background-image: linear-gradient(to bottom, #24f000, #113d00);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+.btn-container button:hover {
+    background: #113d00;
+    background-image: -webkit-linear-gradient(top, #113d00, #24f000);
+    background-image: -moz-linear-gradient(top, #113d00, #24f000);
+    background-image: -ms-linear-gradient(top, #113d00, #24f000);
+    background-image: -o-linear-gradient(top, #113d00, #24f000);
+    background-image: linear-gradient(to bottom, #113d00, #24f000);
+    text-decoration: none;
+}
+.btn-container button:active {
+    transform: scale(0.9);
+    text-decoration: underline;
+    transition: 1s;
+}
+#compareTable {
+    max-width: 99%;
+    border: none;
+    box-shadow: none;
+}
