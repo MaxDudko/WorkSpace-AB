@@ -15,7 +15,8 @@ html, body {
 }
 body {
     background-image: url(background.jpg);
-    font-family: Merienda, cursive;
+    font-family: Arial, sans-serif;
+    font-style: italic;
     font-size: 2vh;
     white-space: nowrap;
 }
@@ -53,6 +54,7 @@ div {
     transition: 2s;
 }
 .logo h1 {
+    font-family: Merienda, cursive;
     font-size: 3vh;
     color: #00FF00;
     box-shadow: 2px 1px 1px #00FF00;
